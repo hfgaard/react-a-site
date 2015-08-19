@@ -1,0 +1,11 @@
+{
+  "name": "react-a-site",
+  "version": "1.0.0",
+  "description": "Re-implement a simple static site like hacker news in React. For now, don't worry about backend integration or styling; leave it as simple html with hardcoded data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
