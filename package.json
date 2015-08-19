@@ -4,8 +4,23 @@
   "description": "Re-implement a simple static site like hacker news in React. For now, don't worry about backend integration or styling; leave it as simple html with hardcoded data.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify js/app.jsx -o build/bundle.js"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/hfgaard/react-a-site.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^11.0.1",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1"
+  },
+  "browserify":{
+    "transform": [
+      "reactify"
+    ]
+  }
 }
